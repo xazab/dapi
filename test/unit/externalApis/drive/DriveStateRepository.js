@@ -5,8 +5,8 @@ const cbor = require('cbor');
 const chaiAsPromised = require('chai-as-promised');
 const dirtyChai = require('dirty-chai');
 
-const generateRandomIdentifier = require('@dashevo/dpp/lib/test/utils/generateRandomIdentifier');
-const getIdentityFixture = require('@dashevo/dpp/lib/test/fixtures/getIdentityFixture');
+const generateRandomIdentifier = require('@xazab/dpp/lib/test/utils/generateRandomIdentifier');
+const getIdentityFixture = require('@xazab/dpp/lib/test/fixtures/getIdentityFixture');
 const DriveStateRepository = require('../../../../lib/externalApis/drive/DriveStateRepository');
 
 const RPCError = require('../../../../lib/rpcServer/RPCError');

@@ -4,17 +4,17 @@ const {
       InvalidArgumentGrpcError,
     },
   },
-} = require('@dashevo/grpc-common');
+} = require('@xazab/grpc-common');
 
 const {
   v0: {
     GetDataContractResponse,
   },
-} = require('@dashevo/dapi-grpc');
+} = require('@xazab/dapi-grpc');
 
 /* eslint-disable import/no-extraneous-dependencies */
-const generateRandomIdentifier = require('@dashevo/dpp/lib/test/utils/generateRandomIdentifier');
-const getDataContractFixture = require('@dashevo/dpp/lib/test/fixtures/getDataContractFixture');
+const generateRandomIdentifier = require('@xazab/dpp/lib/test/utils/generateRandomIdentifier');
+const getDataContractFixture = require('@xazab/dpp/lib/test/fixtures/getDataContractFixture');
 
 const GrpcCallMock = require('../../../../../lib/test/mock/GrpcCallMock');
 

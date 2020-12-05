@@ -8,7 +8,7 @@ const {
       NotFoundGrpcError,
     },
   },
-} = require('@dashevo/grpc-common');
+} = require('@xazab/grpc-common');
 
 const handleAbciResponseError = require(
   '../../../../lib/grpcServer/handlers/handleAbciResponseError',

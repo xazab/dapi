@@ -4,16 +4,16 @@ const {
       InvalidArgumentGrpcError,
     },
   },
-} = require('@dashevo/grpc-common');
+} = require('@xazab/grpc-common');
 
 const {
   v0: {
     BroadcastStateTransitionResponse,
   },
-} = require('@dashevo/dapi-grpc');
+} = require('@xazab/dapi-grpc');
 
-const DashPlatformProtocol = require('@dashevo/dpp');
-const getDataContractFixture = require('@dashevo/dpp/lib/test/fixtures/getDataContractFixture');
+const XazabPlatformProtocol = require('@xazab/dpp');
+const getDataContractFixture = require('@xazab/dpp/lib/test/fixtures/getDataContractFixture');
 
 const GrpcCallMock = require('../../../../../lib/test/mock/GrpcCallMock');
 
@@ -32,7 +32,7 @@ describe('broadcastStateTransitionHandlerFactory', () => {
   let handleAbciResponseErrorMock;
 
   beforeEach(async function beforeEach() {
-    const dpp = new DashPlatformProtocol();
+    const dpp = new XazabPlatformProtocol();
 
     const dataContractFixture = getDataContractFixture();
     stateTransitionFixture = dpp.dataContract.createStateTransition(dataContractFixture);

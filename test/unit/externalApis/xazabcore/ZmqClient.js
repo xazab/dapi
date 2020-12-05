@@ -1,5 +1,5 @@
 // const chai = require('chai');
-// const ZmqClient = require('../../../lib/api/dashcore/ZmqClient');
+// const ZmqClient = require('../../../lib/api/xazabcore/ZmqClient');
 //
 // const { expect } = chai;
 //

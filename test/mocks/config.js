@@ -2,7 +2,7 @@ module.exports = {
   getConfigFixture() {
     return {
       insightUri: '123',
-      dashcore: {
+      xazabcore: {
         p2p: {
           host: '123',
           port: '123',

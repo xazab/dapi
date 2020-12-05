@@ -13,7 +13,7 @@ const {
       AcknowledgingWritable,
     },
   },
-} = require('@dashevo/grpc-common');
+} = require('@xazab/grpc-common');
 
 const {
   v0: {
@@ -22,9 +22,9 @@ const {
     RawTransactions,
     BloomFilter,
   },
-} = require('@dashevo/dapi-grpc');
+} = require('@xazab/dapi-grpc');
 
-const { BloomFilter: CoreBloomFilter } = require('@dashevo/dashcore-lib');
+const { BloomFilter: CoreBloomFilter } = require('@xazab/xazabcore-lib');
 
 const GrpcCallMock = require('../../../../../lib/test/mock/GrpcCallMock');
 const subscribeToTransactionsWithProofsHandlerFactory = require(

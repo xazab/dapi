@@ -1,7 +1,7 @@
 {
-  "name": "@dashevo/dapi",
+  "name": "@xazab/dapi",
   "version": "0.17.0-dev.2",
-  "description": "A decentralized API for the Dash network",
+  "description": "A decentralized API for the Xazab network",
   "scripts": {
     "api": "node scripts/api.js",
     "tx-filter-stream": "node scripts/tx-filter-stream.js",
@@ -30,10 +30,10 @@
     "all": true
   },
   "dependencies": {
-    "@dashevo/dapi-grpc": "~0.16.0",
-    "@dashevo/dashcore-lib": "~0.19.6",
-    "@dashevo/dashd-rpc": "^2.0.2",
-    "@dashevo/grpc-common": "~0.3.1",
+    "@xazab/dapi-grpc": "~0.16.0",
+    "@xazab/xazabcore-lib": "~0.19.6",
+    "@xazab/xazabd-rpc": "^2.0.2",
+    "@xazab/grpc-common": "~0.3.1",
     "ajv": "^6.4.0",
     "bs58": "^4.0.1",
     "cbor": "^4.1.5",
@@ -48,9 +48,9 @@
     "zeromq": "^5.2.0"
   },
   "devDependencies": {
-    "@dashevo/dapi-client": "~0.17.0-dev.1",
-    "@dashevo/dp-services-ctl": "~0.14.0",
-    "@dashevo/dpp": "~0.17.0-dev.2",
+    "@xazab/dapi-client": "~0.17.0-dev.1",
+    "@xazab/dp-services-ctl": "~0.14.0",
+    "@xazab/dpp": "~0.17.0-dev.2",
     "chai": "^4.2.0",
     "chai-as-promised": "^7.1.1",
     "dirty-chai": "^2.0.1",
@@ -67,12 +67,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dashevo/dapi.git"
+    "url": "git+https://github.com/xazab/dapi.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/dashevo/dapi/issues"
+    "url": "https://github.com/xazab/dapi/issues"
   },
-  "homepage": "https://github.com/dashevo/dapi#readme"
+  "homepage": "https://github.com/xazab/dapi#readme"
 }

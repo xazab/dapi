@@ -4,15 +4,15 @@ const {
       InvalidArgumentGrpcError,
     },
   },
-} = require('@dashevo/grpc-common');
+} = require('@xazab/grpc-common');
 
-const { Transaction } = require('@dashevo/dashcore-lib');
+const { Transaction } = require('@xazab/xazabcore-lib');
 
 const {
   v0: {
     BroadcastTransactionResponse,
   },
-} = require('@dashevo/dapi-grpc');
+} = require('@xazab/dapi-grpc');
 
 const broadcastTransactionHandlerFactory = require('../../../../../lib/grpcServer/handlers/core/broadcastTransactionHandlerFactory');
 

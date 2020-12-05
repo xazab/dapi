@@ -1,4 +1,4 @@
-const { mocha: { startDashCore } } = require('@dashevo/dp-services-ctl');
+const { mocha: { startXazabCore } } = require('@xazab/dp-services-ctl');
 
 const {
   Transaction,
@@ -7,14 +7,14 @@ const {
   Address,
   Networks,
   MerkleBlock,
-} = require('@dashevo/dashcore-lib');
+} = require('@xazab/xazabcore-lib');
 
 const testTransactionAgainstFilter = require('../../../lib/transactionsFilter/testTransactionAgainstFilter');
 
 describe('testTransactionAgainstFilter', () => {
   let coreApi;
 
-  startDashCore().then((core) => {
+  startXazabCore().then((core) => {
     coreApi = core.getApi();
   });
 

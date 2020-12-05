@@ -2,7 +2,7 @@ const chai = require('chai');
 const dirtyChai = require('dirty-chai');
 const chaiAsPromised = require('chai-as-promised');
 const sinon = require('sinon');
-const { MerkleBlock, Transaction, BloomFilter } = require('@dashevo/dashcore-lib');
+const { MerkleBlock, Transaction, BloomFilter } = require('@xazab/xazabcore-lib');
 
 const getHistoricalTransactionsIteratorFactory = require('../../../lib/transactionsFilter/getHistoricalTransactionsIteratorFactory');
 

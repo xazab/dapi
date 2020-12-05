@@ -1,9 +1,9 @@
 # DAPI
 
-[![Build Status](https://travis-ci.com/dashevo/dapi.svg?branch=master)](https://travis-ci.com/dashevo/dapi)
+[![Build Status](https://travis-ci.com/xazab/dapi.svg?branch=master)](https://travis-ci.com/xazab/dapi)
 [![API stability](https://img.shields.io/badge/stability-stable-green.svg)](https://nodejs.org/api/documentation.html#documentation_stability_index)
 
-> A decentralized API for the Dash network
+> A decentralized API for the Xazab network
 
 ## Table of Contents
 - [Install](#install)
@@ -25,15 +25,15 @@ npm install
 
 DAPI targets the latest LTS release of Node.js. Currently, this is Node v10.13.
 
-DAPI requires [Insight-API](https://github.com/dashevo/insight-api) and the latest version of [dashcore](https://github.com/dashevo/dash-evo-branches/tree/evo) with Evolution features (special branch repo).
+DAPI requires [Insight-API](https://github.com/xazab/insight-api) and the latest version of [xazabcore](https://github.com/xazab/xazab-branches/tree/evo) with Evolution features (special branch repo).
 
-1. **Install core.** You can use the docker image (`dashcore:evo`) or clone code from [the repository](https://github.com/dashevo/dash-evo-branches/tree/evo), switch to the `evo` branch, and build it by yourself. Note: you need to build image with ZMQ and wallet support. You can follow the build instructions located [here](https://github.com/dashevo/dash-evo-branches/tree/evo/doc)
-2. **Configure core.** DAPI needs dashcore's ZMQ interface to be exposed and all indexes enabled. You can find the example config for dashcore [here](/doc/dependencies_configs/dash.conf). To start dashcore process with this config, copy it somewhere to your system, and then run `./src/dashd -conf=/path/to/your/config`.
+1. **Install core.** You can use the docker image (`xazabcore:evo`) or clone code from [the repository](https://github.com/xazab/xazab-branches/tree/evo), switch to the `evo` branch, and build it by yourself. Note: you need to build image with ZMQ and wallet support. You can follow the build instructions located [here](https://github.com/xazab/xazab-branches/tree/evo/doc)
+2. **Configure core.** DAPI needs xazabcore's ZMQ interface to be exposed and all indexes enabled. You can find the example config for xazabcore [here](/doc/dependencies_configs/xazab.conf). To start xazabcore process with this config, copy it somewhere to your system, and then run `./src/xazabd -conf=/path/to/your/config`.
 3. **Install Insight-API.** You can use docker image (`evoinsight:latest`) or install it manually.
-    1. To install it manually, clone the [dashcore-node repo](https://github.com/dashevo/dashcore-node). `cd` to that repo, run `npm i`
-    2. Copy [config file](/doc/dependencies_configs/dashcore-node.json) to the repo directory
-    3. Install Insight-API service. Run `./bin/dashcore-node install https://github.com/dashevo/insight-api/` from the repo directory
-    4. Run `./bin/dashcore-node start`
+    1. To install it manually, clone the [xazabcore-node repo](https://github.com/xazab/xazabcore-node). `cd` to that repo, run `npm i`
+    2. Copy [config file](/doc/dependencies_configs/xazabcore-node.json) to the repo directory
+    3. Install Insight-API service. Run `./bin/xazabcore-node install https://github.com/xazab/insight-api/` from the repo directory
+    4. Run `./bin/xazabcore-node start`
 
 ## Usage
 
@@ -67,8 +67,8 @@ Implementation of these commands can be viewed [here](/lib/rpcServer/commands).
 
 ## Contributing
 
-Feel free to dive in! [Open an issue](https://github.com/dashevo/dapi/issues/new) or submit PRs.
+Feel free to dive in! [Open an issue](https://github.com/xazab/dapi/issues/new) or submit PRs.
 
 ## License
 
-[MIT](LICENSE) &copy; Dash Core Group, Inc.
+[MIT](LICENSE) &copy; Xazab Core Group, Inc.

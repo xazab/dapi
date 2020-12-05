@@ -6,12 +6,12 @@ const {
   server: {
     createServer,
   },
-} = require('@dashevo/grpc-common');
+} = require('@xazab/grpc-common');
 
 const {
   getCoreDefinition,
   getPlatformDefinition,
-} = require('@dashevo/dapi-grpc');
+} = require('@xazab/dapi-grpc');
 
 const { client: RpcClient } = require('jayson/promise');
 
@@ -24,7 +24,7 @@ const log = require('../lib/log');
 const rpcServer = require('../lib/rpcServer/server');
 const DriveStateRepository = require('../lib/externalApis/drive/DriveStateRepository');
 const insightAPI = require('../lib/externalApis/insight');
-const dashCoreRpcClient = require('../lib/externalApis/dashcore/rpc');
+const xazabCoreRpcClient = require('../lib/externalApis/xazabcore/rpc');
 
 const coreHandlersFactory = require(
   '../lib/grpcServer/handlers/core/coreHandlersFactory',
@@ -60,7 +60,7 @@ async function main() {
   rpcServer.start({
     port: config.rpcServer.port,
     networkType: config.network,
-    dashcoreAPI: dashCoreRpcClient,
+    xazabcoreAPI: xazabCoreRpcClient,
     log,
   });
   log.info(`JSON RPC server is listening on port ${config.rpcServer.port}`);

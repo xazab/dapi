@@ -4,15 +4,15 @@ const {
       InvalidArgumentGrpcError,
     },
   },
-} = require('@dashevo/grpc-common');
+} = require('@xazab/grpc-common');
 
 const {
   v0: {
     GetIdentitiesByPublicKeyHashesResponse,
   },
-} = require('@dashevo/dapi-grpc');
+} = require('@xazab/dapi-grpc');
 
-const getIdentityFixture = require('@dashevo/dpp/lib/test/fixtures/getIdentityFixture');
+const getIdentityFixture = require('@xazab/dpp/lib/test/fixtures/getIdentityFixture');
 
 const getIdentitiesByPublicKeyHashesHandlerFactory = require(
   '../../../../../lib/grpcServer/handlers/platform/getIdentitiesByPublicKeyHashesHandlerFactory',

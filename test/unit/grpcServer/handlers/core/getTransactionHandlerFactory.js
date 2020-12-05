@@ -5,15 +5,15 @@ const {
       NotFoundGrpcError,
     },
   },
-} = require('@dashevo/grpc-common');
+} = require('@xazab/grpc-common');
 
 const {
   v0: {
     GetTransactionResponse,
   },
-} = require('@dashevo/dapi-grpc');
+} = require('@xazab/dapi-grpc');
 
-const { Transaction } = require('@dashevo/dashcore-lib');
+const { Transaction } = require('@xazab/xazabcore-lib');
 
 const getTransactionHandlerFactory = require('../../../../../lib/grpcServer/handlers/core/getTransactionHandlerFactory');
 

@@ -1,6 +1,6 @@
 const {
   startDapi,
-} = require('@dashevo/dp-services-ctl');
+} = require('@xazab/dp-services-ctl');
 
 const {
   Address,
@@ -9,7 +9,7 @@ const {
   Networks,
   BloomFilter,
   MerkleBlock,
-} = require('@dashevo/dashcore-lib');
+} = require('@xazab/xazabcore-lib');
 
 const wait = require('../../../../../lib/utils/wait');
 
@@ -37,7 +37,7 @@ describe('subscribeToTransactionsWithProofsHandlerFactory', function main() {
     bloomFilter = BloomFilter.create(1, 0.00001);
 
     const {
-      dashCore,
+      xazabCore,
       dapiTxFilterStream,
       remove,
     } = await startDapi({
@@ -55,7 +55,7 @@ describe('subscribeToTransactionsWithProofsHandlerFactory', function main() {
 
     removeDapi = remove;
 
-    coreAPI = dashCore.getApi();
+    coreAPI = xazabCore.getApi();
     dapiClient = dapiTxFilterStream.getApi();
 
     ({ result: addressString } = await coreAPI.getNewAddress());

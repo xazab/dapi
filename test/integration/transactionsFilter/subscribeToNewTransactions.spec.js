@@ -7,7 +7,7 @@ const {
   BloomFilter,
   InstantLock,
   util: { buffer: BufferUtils },
-} = require('@dashevo/dashcore-lib');
+} = require('@xazab/xazabcore-lib');
 
 const BloomFilterEmitterCollection = require('../../../lib/bloomFilter/emitter/BloomFilterEmitterCollection');
 const ProcessMediator = require('../../../lib/transactionsFilter/ProcessMediator');

@@ -4,17 +4,17 @@ const {
       InvalidArgumentGrpcError,
     },
   },
-} = require('@dashevo/grpc-common');
+} = require('@xazab/grpc-common');
 
 const {
   v0: {
     GetIdentityResponse,
   },
-} = require('@dashevo/dapi-grpc');
+} = require('@xazab/dapi-grpc');
 
 /* eslint-disable import/no-extraneous-dependencies */
-const generateRandomIdentifier = require('@dashevo/dpp/lib/test/utils/generateRandomIdentifier');
-const getIdentityFixture = require('@dashevo/dpp/lib/test/fixtures/getIdentityFixture');
+const generateRandomIdentifier = require('@xazab/dpp/lib/test/utils/generateRandomIdentifier');
+const getIdentityFixture = require('@xazab/dpp/lib/test/fixtures/getIdentityFixture');
 
 const getIdentityHandlerFactory = require('../../../../../lib/grpcServer/handlers/platform/getIdentityHandlerFactory');
 

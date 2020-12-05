@@ -140,7 +140,7 @@
 //   ],
 // };
 //
-// // TODO add tests for: https://dashpay.atlassian.net/browse/EV-939, https://dashpay.atlassian.net/browse/EV-940
+// // TODO add tests for: https://xazab.atlassian.net/browse/EV-939, https://xazab.atlassian.net/browse/EV-940
 // describe('Insight', () => {
 //   afterEach(() => {
 //     requestStub.restore();
@@ -601,7 +601,7 @@
 //       requestStub
 //         .withArgs(`${URI}/status?q=getBestBlockHash`).returns(new Promise(resolve => resolve({
 // bestblockhash: testHashFromHeight.blockHash.blockHash })));
-//       // TODO: https://dashpay.atlassian.net/browse/EV-941
+//       // TODO: https://xazab.atlassian.net/browse/EV-941
 //       requestStub
 //         .withArgs(`${URI}/status?q=getLastBlockHash`)
 //         .returns(new Promise(resolve => resolve({})));
@@ -627,7 +627,7 @@
 //       expect(status).to.be.deep.equal({});
 //     });
 //
-//     // TODO: automate https://dashpay.atlassian.net/browse/EV-942
+//     // TODO: automate https://xazab.atlassian.net/browse/EV-942
 //     ['fake', 123].forEach((type) => {
 //       it(
 //         'Should return error if Invalid query string.',

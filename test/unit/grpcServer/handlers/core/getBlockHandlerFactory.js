@@ -5,15 +5,15 @@ const {
       NotFoundGrpcError,
     },
   },
-} = require('@dashevo/grpc-common');
+} = require('@xazab/grpc-common');
 
 const {
   v0: {
     GetBlockResponse,
   },
-} = require('@dashevo/dapi-grpc');
+} = require('@xazab/dapi-grpc');
 
-const { Block } = require('@dashevo/dashcore-lib');
+const { Block } = require('@xazab/xazabcore-lib');
 
 const getBlockHandlerFactory = require('../../../../../lib/grpcServer/handlers/core/getBlockHandlerFactory');
 
